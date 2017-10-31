@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: inherit;
+}
+
+input,
+label,
+select,
+button,
+textarea
+{
+	margin:0;
+	border:0;
+	padding:0;
+	display:inline-block;
+	vertical-align:middle;
+	white-space:normal;
+	background:none;
+	line-height:1;
+
+	/* Browsers have different default form fonts */
+	font-size:13px;
+	font-family:Arial;
+}
+
+.container {
+    width: 1200px;
+    padding: 0 16px;
+    margin: 0 auto;
+}
+
+header {
+    height: 720px;
+    background: #2C2C2C;
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    align-items: center;
+    padding: 24px 16px;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.main-header button {
+    width: 16px;
+    height: 16px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.main-header button:hover {
+    cursor: pointer;
+}
+
+.menu {
+    background-image: url(../img/menu-icon.svg);
+}
+
+.logo {
+    font-family: Montserrat-Bold;
+    font-size: 29px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+}
+
+.logo span {
+    font-family: PlayfairDisplay-BlackItalic;
+    color: #FFC80A;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.search input {
+    position: absolute; right: 33px;
+    width: 10px;
+    height: 32px;
+    padding-left: 8px;
+    background: #4B4B4B;
+    overflow: hidden;
+    transition: width 0.5s;
+}
+
+.search input:hover {
+    width: 160px;
+}
+
+.search button {
+    height: 32px;
+    width: 32px;
+    background-image: url(../img/search-icon.svg);
+    background-size: 16px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.search button:hover {
+    background-image: url(../img/search-icon-hover.svg);
+}
+
+.main-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main-menu {
+    display: flex;
+    position: relative;
+    align-items: center;
+    background: #000000;
+    min-height: 100vh;
+}
+
+
+.main-menu button {
+    position: absolute; top: 24px;
+    color: #F05638;
+}
+
+.main-menu ul {
+    width: 700px;
+    margin: 0 auto;
+    list-style-type: none;
+    color: #FFF;
+}
+
+.main-menu li {
+    padding:40px 0;
+    font-family: Montserrat-Bold;
+    font-size: 48px;
+    text-align: center;
+}
+
+.main-menu li a:hover {
+    color: #FFC80A;
+}
