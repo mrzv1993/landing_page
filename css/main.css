@@ -21,8 +21,6 @@ textarea
 	white-space:normal;
 	background:none;
 	line-height:1;
-
-	/* Browsers have different default form fonts */
 	font-size:13px;
 	font-family:Arial;
 }
@@ -112,6 +110,14 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.main-title  h1{
+font-family: Arvo-Bold;
+font-size: 100px;
+color: #FFFFFF;
+letter-spacing: 0;
+line-height: 112px;
 }
 
 .main-menu {
