@@ -41,7 +41,20 @@ textarea {
 header {
   overflow: hidden;
   height: 720px;
+  transition: background 0.3s;
+
+}
+
+.header-bg-1 {
   background: #2C2C2C;
+}
+
+.header-bg-2 {
+  background: #9076C1;
+}
+
+.header-bg-3 {
+  background: #FC544E;
 }
 
 .main-header {
@@ -74,16 +87,21 @@ header {
   background-image: url(../img/menu-icon-hover.svg);
 }
 
+
+
 .logo {
   color: #FFFFFF;
   letter-spacing: 0;
   font-size: 29px;
   font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
 }
 
 .logo span {
   color: #FFC80A;
   font-family: 'Playfair Display', serif;
+  font-weight: bold;
+  font-style: italic;
 }
 
 .search {
@@ -268,7 +286,7 @@ header {
   display: none;
   min-height: 100vh;
   width: 100%;
-  background: rgba(20, 20, 20, 0.95);
+  background: rgba(0, 0, 0, 0.95);
 
   justify-content: center;
   align-items: center;
@@ -347,6 +365,7 @@ header {
   letter-spacing: 2.4px;
   font-size: 12px;
   font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
 }
 
 .forgot {
@@ -435,10 +454,9 @@ header {
   margin: 16px auto;
   width: 128px;
   color: #FFFFFF;
-  letter-spacing: 0;
   font-size: 12px;
   font-family: Roboto-Light;
-  line-height: 18px;
+  line-height: 1.5;
 }
 
 .sign-up button {
@@ -465,6 +483,7 @@ header {
   letter-spacing: 2.4px;
   font-size: 12px;
   font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
   cursor: pointer;
   -webkit-transform: translate(0, 100%) rotate(-90deg);
   -moz-transform: translate(0, 100%) rotate(-90deg);

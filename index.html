@@ -9,7 +9,7 @@
 </head>
 
 <body>
-  <header>
+  <header class="header-bg-1">
     <div class="main-container">
       <nav class="main-header">
         <button class="menu" type="button"></button>
@@ -34,9 +34,6 @@
           <ul>
             <li>
               <button class="slider-circle-active" type="button"></button>
-            </li>
-            <li>
-              <button class="slider-circle" type="button"></button>
             </li>
             <li>
               <button class="slider-circle" type="button"></button>
@@ -94,6 +91,11 @@
     var login = document.querySelector(".login");
     var popup = document.querySelector(".popup");
     var close = document.querySelector(".close-modal button");
+    var header = document.querySelector("header");
+    var color1 = document.querySelector(".slider-header li:nth-child(1)");
+    var color2 = document.querySelector(".slider-header li:nth-child(2)");
+    var color3 = document.querySelector(".slider-header li:nth-child(3)");
+
 
     login.addEventListener("click", function(event) {
       popup.classList.add("popup-show");
@@ -109,6 +111,21 @@
       search.classList.add("search-active");
     });
 
+    color1.addEventListener("click", function(event) {
+      header.classList.add("header-bg-1");
+      header.classList.remove("header-bg-2", "header-bg-3");
+
+    });
+
+    color2.addEventListener("click", function(event) {
+      header.classList.add("header-bg-2");
+      header.classList.remove("header-bg-1", "header-bg-3");
+    });
+
+    color3.addEventListener("click", function(event) {
+      header.classList.add("header-bg-3");
+      header.classList.remove("header-bg-1", "header-bg-2");
+    });
   </script>
 </body>
 
