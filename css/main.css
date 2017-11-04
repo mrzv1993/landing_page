@@ -78,12 +78,12 @@ header {
   color: #FFFFFF;
   letter-spacing: 0;
   font-size: 29px;
-  font-family: Montserrat-Bold;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .logo span {
   color: #FFC80A;
-  font-family: PlayfairDisplay-BlackItalic;
+  font-family: 'Playfair Display', serif;
 }
 
 .search {
@@ -181,7 +181,7 @@ header {
   white-space: nowrap;
   letter-spacing: 2.4px;
   font-size: 12px;
-  font-family: Montserrat-Bold;
+  font-family: 'Montserrat', sans-serif;
   -webkit-transform: translate(0, 100%) rotate(-90deg);
   -moz-transform: translate(0, 100%) rotate(-90deg);
   -ms-transform: translate(0, 100%) rotate(-90deg);
@@ -209,7 +209,7 @@ header {
   color: #FFFFFF;
   letter-spacing: 0;
   font-size: 100px;
-  font-family: Arvo-Bold;
+  font-family: 'Arvo', serif;
   line-height: 112px;
 }
 
@@ -217,7 +217,7 @@ header {
   color: #FFFFFF;
   letter-spacing: 2.4px;
   font-size: 12px;
-  font-family: Montserrat-Bold;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .slider-header ul {
@@ -292,7 +292,7 @@ header {
   color: #212121;
   letter-spacing: 0;
   font-size: 24px;
-  font-family: Arvo;
+  font-family: 'Arvo', serif;
   line-height: 32px;
 }
 
@@ -346,7 +346,7 @@ header {
   color: #212121;
   letter-spacing: 2.4px;
   font-size: 12px;
-  font-family: Montserrat-Bold;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .forgot {
@@ -360,7 +360,7 @@ header {
   text-decoration: none;
   letter-spacing: 0;
   font-size: 10px;
-  font-family: Roboto-Light;
+  font-family: 'Roboto', sans-serif;
   line-height: 18px;
 }
 
@@ -381,7 +381,7 @@ header {
   color: #212121;
   text-align: right;
   font-size: 12px;
-  font-family: Roboto-Light;
+  font-family: 'Roboto', sans-serif;
   cursor: pointer;
 }
 
@@ -464,7 +464,7 @@ header {
   white-space: nowrap;
   letter-spacing: 2.4px;
   font-size: 12px;
-  font-family: Montserrat-Bold;
+  font-family: 'Montserrat', sans-serif;
   cursor: pointer;
   -webkit-transform: translate(0, 100%) rotate(-90deg);
   -moz-transform: translate(0, 100%) rotate(-90deg);
