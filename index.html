@@ -2,115 +2,111 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <title>Landing</title>
-  <link rel="stylesheet" href="css/main.css">
+    <meta charset="UTF-8">
+    <title>Landing</title>
+    <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
-  <header>
-   <div class="main-container">
-           <nav class="main-header">
-      <button class="menu" type="button"></button>
-      <div class="logo">Land<span>ing</span></div>
-      <form class="search">
-        <input type="text" placeholder="What search?" name="search">
-        <button type="button">
+    <header>
+        <div class="main-container">
+            <nav class="main-header">
+                <button class="menu" type="button"></button>
+                <div class="logo">Land<span>ing</span></div>
+                <form class="search">
+                    <input type="text" placeholder="What search?" name="search">
+                    <button type="button">
           <span class="icon"></span>
         </button>
-      </form>
-    </nav>
-          <div class="container main-content">
-        <button class="login" type="button">
-            <div class="login-icon"></div>
-            <b>LOGIN</b>
-        </button>
-      <div class="main-title">
-        <h3>IN CASE YOU NEEDED</h3>
-        <h1>Various Aspects
-of Management</h1>
-      </div>
-      <div class="slider-header">
-          <ul>
-              <li>
-                <button class="slider-circle-active" type="button"></button>
-             </li>
-             <li>
-                <button class="slider-circle" type="button"></button>
-             </li>
-             <li>
-                <button class="slider-circle" type="button"></button>
-             </li>
-             <li>
-                <button class="slider-circle" type="button"></button>
-             </li>
-          </ul>
-      </div>
-    </div>
-      <div class="gamepad"></div>
-   </div>
+                </form>
+            </nav>
+            <div class="container main-content">
+                <button class="login" type="button">
+                    <div class="login-icon"></div>
+                    <b>LOGIN</b>
+                </button>
+                <div class="main-title">
+                    <h3>IN CASE YOU NEEDED</h3>
+                    <h1>Various Aspects of Management</h1>
+                </div>
+                <div class="slider-header">
+                    <ul>
+                        <li>
+                            <button class="slider-circle-active" type="button"></button>
+                        </li>
+                        <li>
+                            <button class="slider-circle" type="button"></button>
+                        </li>
+                        <li>
+                            <button class="slider-circle" type="button"></button>
+                        </li>
+                        <li>
+                            <button class="slider-circle" type="button"></button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="gamepad"></div>
+        </div>
 
-  </header>
-  <section class="popup">
-      <div class="login-form">
-          <div class="sign-in">
-              <h2>Hello,<br>
-welcome back</h2>
-         <form action="" method="post">
-             <input type="text" placeholder="E-mail" name="email">
-             <input type="password" placeholder="Password" name="password">
-             <div class="forgot">
-                 <a href="#">Forgot password?</a>
-             </div>
-             <button>SIGN IN</button>
-             <label class="login-checkbox">
+    </header>
+    <section class="popup">
+        <div class="login-form">
+            <div class="sign-in">
+                <h2>Hello,<br> welcome back</h2>
+                <form action="" method="post">
+                    <input type="text" placeholder="E-mail" name="email">
+                    <input type="password" placeholder="Password" name="password">
+                    <div class="forgot">
+                        <a href="#">Forgot password?</a>
+                    </div>
+                    <button>SIGN IN</button>
+                    <label class="login-checkbox">
                  <input type="checkbox">
                  <span class="ceckbox-indicator"></span>
                  REMEMBER ME
              </label>
-         </form>
-          </div>
-          <div class="sign-up">
-              <h2>New here?</h2>
-              <p>Sign up and discover a great amount of new</p>
-              <button>SIGN UP</button>
-          </div>
-      </div>
-      <div class="close-modal">
-          <button>CLOSE</button>
-      </div>
-  </section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <footer></footer>
-  <script>
+                </form>
+            </div>
+            <div class="sign-up">
+                <h2>New here?</h2>
+                <p>Sign up and discover a great amount of new</p>
+                <button>SIGN UP</button>
+            </div>
+        </div>
+        <div class="close-modal">
+            <button>CLOSE</button>
+        </div>
+    </section>
+    <section></section>
+    <section></section>
+    <section></section>
+    <section></section>
+    <section></section>
+    <section></section>
+    <section></section>
+    <section></section>
+    <section></section>
+    <section></section>
+    <footer></footer>
+    <script>
+        var login = document.querySelector(".login");
+        var popup = document.querySelector(".popup");
+        var close = document.querySelector(".close-modal button");
 
-    var login = document.querySelector(".login");
-    var popup = document.querySelector(".popup");
-    var close = document.querySelector(".close-modal button");
+        login.addEventListener("click", function(event) {
+            popup.classList.add("popup-show");
+        });
 
-    login.addEventListener("click", function(event) {
-        popup.classList.add("popup-show");
-    });
+        close.addEventListener("click", function(ever) {
+            popup.classList.remove("popup-show");
+        });
 
-    close.addEventListener("click",function(ever) {
-        popup.classList.remove("popup-show");
-    });
+        var search = document.querySelector(".search button");
 
-    var search = document.querySelector(".search button");
-
-    search.addEventListener("click", function(event) {
-        search.classList.add("search-active");
-    });
-
+        search.addEventListener("click", function(event) {
+            search.classList.add("search-active");
+        });
     </script>
 </body>
 
