@@ -15,7 +15,7 @@
         <button class="menu" type="button"></button>
         <div class="logo">Land<span>ing</span></div>
         <form class="search">
-          <input type="text" placeholder="What search?" name="search">
+          <input class="search-input" type="text" placeholder="What search?" name="search">
           <button type="button">
           <span class="icon"></span>
         </button>
@@ -101,9 +101,15 @@
     });
 
     var search = document.querySelector(".search button");
+    var search_open = document.querySelector(".search-input");
 
     search.addEventListener("click", function(event) {
       search.classList.add("search-active");
+    });
+
+    search.addEventListener("click", function(event) {
+      search_open.classList.add("search-input-open");
+      document.classList.remove("search-input-open");
     });
 
     <!-- Слайдер -->>

@@ -116,12 +116,11 @@ header {
 }
 */
 
-.search input {
+.search-input {
   position: absolute;
   right: 33px;
   overflow: hidden;
-  padding-left: 8px;
-  width: 10px;
+  width: 0px;
   height: 32px;
   background: rgba(255, 255, 255, 0.1);
   transition: width 0.5s;
@@ -129,8 +128,9 @@ header {
 }
 
 
-.search input:hover {
+.search-input-open {
   width: 160px;
+  padding-left: 8px;
 }
 
 .search input::placeholder {
@@ -141,6 +141,9 @@ header {
 .search button {
   width: 32px;
   height: 32px;
+}
+
+.search-button {
   background-image: url(../img/search-icon.svg);
   background-position: center;
   background-size: 16px;
@@ -148,14 +151,17 @@ header {
   transition: background 0.2s;
 }
 
-.search button:hover {
+.search-button:hover {
   background-image: url(../img/search-icon-hover.svg);
 }
 
 .search-active {
-  background: #FFC80A;
   background-image: url(../img/search-icon-hover.svg);
-  transition: background 0s;
+  background-position: center;
+  background-size: 16px;
+  background-repeat: no-repeat;
+  transition: background 0.2s;
+  background-color: #FFC80A;
 }
 
 .main-content {
