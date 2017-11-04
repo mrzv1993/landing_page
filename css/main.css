@@ -120,8 +120,7 @@ header {
   position: absolute;
   right: 33px;
   overflow: hidden;
-  padding-left: 8px;
-  width: 8px;
+  width: 0px;
   height: 32px;
   background: rgba(255, 255, 255, 0.1);
   transition: width 0.5s;
@@ -131,6 +130,7 @@ header {
 
 .search-input-open {
   width: 160px;
+  padding-left: 8px;
 }
 
 .search input::placeholder {
