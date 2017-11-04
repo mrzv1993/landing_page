@@ -33,7 +33,7 @@
         <div class="slider-header">
           <ul>
             <li>
-              <button class="slider-circle-active" type="button"></button>
+              <button class="slider-circle slider-circle-active" type="button"></button>
             </li>
             <li>
               <button class="slider-circle" type="button"></button>
@@ -91,11 +91,6 @@
     var login = document.querySelector(".login");
     var popup = document.querySelector(".popup");
     var close = document.querySelector(".close-modal button");
-    var header = document.querySelector("header");
-    var color1 = document.querySelector(".slider-header li:nth-child(1)");
-    var color2 = document.querySelector(".slider-header li:nth-child(2)");
-    var color3 = document.querySelector(".slider-header li:nth-child(3)");
-
 
     login.addEventListener("click", function(event) {
       popup.classList.add("popup-show");
@@ -111,6 +106,13 @@
       search.classList.add("search-active");
     });
 
+    <!-- Слайдер -->>
+
+    var header = document.querySelector("header");
+    var color1 = document.querySelector(".slider-header li:nth-child(1) button");
+    var color2 = document.querySelector(".slider-header li:nth-child(2) button");
+    var color3 = document.querySelector(".slider-header li:nth-child(3) button");
+
     color1.addEventListener("click", function(event) {
       header.classList.add("header-bg-1");
       header.classList.remove("header-bg-2", "header-bg-3");
@@ -125,6 +127,24 @@
     color3.addEventListener("click", function(event) {
       header.classList.add("header-bg-3");
       header.classList.remove("header-bg-1", "header-bg-2");
+    });
+
+    color1.addEventListener("click", function(event) {
+      color1.classList.add("slider-circle-active");
+      color2.classList.remove("slider-circle-active");
+      color3.classList.remove("slider-circle-active");
+    });
+
+    color2.addEventListener("click", function(event) {
+      color2.classList.add("slider-circle-active");
+      color1.classList.remove("slider-circle-active");
+      color3.classList.remove("slider-circle-active");
+    });
+
+    color3.addEventListener("click", function(event) {
+      color3.classList.add("slider-circle-active");
+      color1.classList.remove("slider-circle-active");
+      color2.classList.remove("slider-circle-active");
     });
   </script>
 </body>

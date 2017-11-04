@@ -107,7 +107,6 @@ header {
 .search {
   position: relative;
   display: flex;
-
   align-items: center;
 }
 
@@ -124,13 +123,18 @@ header {
   padding-left: 8px;
   width: 10px;
   height: 32px;
-  background: #4B4B4B;
+  background: rgba(255, 255, 255, 0.1);
   transition: width 0.5s;
+  color: #FFC80A;
 }
 
 
 .search input:hover {
   width: 160px;
+}
+
+.search input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
 }
 
 
@@ -195,7 +199,7 @@ header {
 
 .login b {
   display: inline-block;
-  color: #4F4F4F;
+  color: rgba(255, 255, 255, 0.2);
   white-space: nowrap;
   letter-spacing: 2.4px;
   font-size: 12px;
@@ -250,7 +254,7 @@ header {
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background: #4F4F4F;
+  background: rgba(255, 255, 255, 0.2);
   transition: background 0.2s;
 }
 
@@ -478,7 +482,7 @@ header {
 .close-modal button {
   display: inline-block;
   margin-left: 16px;
-  color: #4F4F4F;
+  color: rgba(255, 255, 255, 0.2);
   white-space: nowrap;
   letter-spacing: 2.4px;
   font-size: 12px;
