@@ -328,34 +328,41 @@ header {
   bottom: 59px;
 }
 
-
-.popup {
-  position: absolute;
+.modal-overlay {
+  display: none;
+  position: fixed;
   top: 0;
   left: 0;
-  display: flex;
-  display: none;
-  min-height: 100vh;
+  z-index: 1;
   width: 100%;
-  background: rgba(0, 0, 0, 0.95);
-
-  justify-content: center;
-  align-items: center;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
 }
 
-.popup-show {
-  display: flex;
+.modal-overlay-show {
+  display: block;
 }
 
-.login-form {
+.modal-content {
+  position: fixed;
+  display: none;
+  top: 128px;
+  left: 50%;
+  margin-left: -330px;
   width: 660px;
   height: 495px;
   background-image: url(../img/login-bg.png);
+  box-shadow: 0 30px 50px rbga(0, 0, 0, 0.7);
   background-position: center;
   text-align: center;
+  z-index: 2;
 }
 
-.login-form h2 {
+.modal-content-show {
+  display: block;
+}
+
+.modal-content h2 {
   margin: 0 auto;
   margin-top: 56px;
   color: #212121;
@@ -365,12 +372,43 @@ header {
   line-height: 32px;
 }
 
-.login b:before {
-  float: left;
-  margin-top: 100%;
-  content: "";
+.modal-content-close {
+  position: absolute;
+  top: 0;
+  right: -32px;
+  width: 22px;
+  height: 22px;
+  font-size: 0;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
 }
 
+.modal-content-close::after,
+.modal-content-close::before {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 3px;
+  background: #4B4B4B;
+  border-radius: 1px;
+  top: 10px;
+  left: 2px;
+}
+
+.modal-content-close::after {
+  transform: rotate(45deg);
+}
+
+.modal-content-close::before {
+  transform: rotate(-45deg);
+}
+
+.modal-content-close:hover:after,
+.modal-content-close:hover:before {
+  background-color: #FFC80A;
+  cursor: pointer;
+}
 
 .sign-in {
   float: left;
@@ -382,32 +420,33 @@ header {
 .sign-in form {
   display: flex;
   margin-top: 56px;
-
   flex-flow: column;
   align-items: center;
 }
 
-.sign-in input[type="text"],
-.sign-in input[type="password"],
+.modal-content input[type="email"],
+.modal-content input[type="password"],
 .login-form button {
   padding: 12px 16px;
   width: 208px;
   border: 1px solid #9FA3A7;
   border-radius: 25px;
   background: #FFFFFF;
+  color: #0EBAC5;
+}
+
+.modal-content input[type="email"]:focus,
+.modal-content input[type="password"]:focus {
+  border: 1px solid #0EBAC5;
 }
 
 .sign-in input:nth-child(2) {
   margin-top: 24px;
 }
 
-.sign-in input[type="text"]:focus,
-.sign-in input[type="password"]:focus {
-  border: 1px solid #0EBAC5;
-}
-
-.login-form button {
+.sign-in button {
   margin-top: 32px;
+  border-radius: 25px;
   width: 240px;
   height: 48px;
   border: none;
@@ -417,6 +456,7 @@ header {
   font-size: 12px;
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
+  cursor: pointer;
 }
 
 .forgot {
@@ -425,7 +465,7 @@ header {
   text-align: right;
 }
 
-.sign-in a {
+.forgot a {
   color: #212121;
   text-decoration: none;
   letter-spacing: 0;
@@ -434,7 +474,7 @@ header {
   line-height: 18px;
 }
 
-.sign-in a:hover {
+.forgot a:hover {
   color: #FFC80A;
 }
 
@@ -511,6 +551,15 @@ header {
 }
 
 .sign-up button {
+  border-radius: 25px;
+  height: 48px;
+  border: none;
+  color: #212121;
+  letter-spacing: 2.4px;
+  font-size: 12px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  cursor: pointer;
   margin-top: 186px;
   width: 128px;
   background: #FFFFFF;
@@ -519,6 +568,15 @@ header {
 .sign-up button:hover {
   color: #FFC80A;
   cursor: pointer;
+}
+
+
+
+
+.login b:before {
+  float: left;
+  margin-top: 100%;
+  content: "";
 }
 
 .close-modal {
@@ -558,4 +616,4 @@ header {
   color: #FFF;
 }
 
-@import url('https://fonts.googleapis.com/css?family=Arvo:400,400i,700,700i|Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Playfair+Display:400,400i,700,700i,900,900i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i');
+*/ @import url('https://fonts.googleapis.com/css?family=Arvo:400,400i,700,700i|Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Playfair+Display:400,400i,700,700i,900,900i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i');
