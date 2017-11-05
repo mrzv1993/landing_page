@@ -279,14 +279,54 @@ header {
   background: #FFC80A;
 }
 
-.gamepad {
+.slider-img {
   position: relative;
-  bottom: 96px;
   margin: 0 auto;
+  height: 566px;
+}
+
+.gamepad-show {
+  position: absolute;
   width: 702px;
   height: 566px;
+  left: 256px;
+  bottom: 88px;
   background-image: url(../img/Gamepad.png);
+  transition: bottom 0.5s;
 }
+
+.gamepad-none {
+  bottom: -256px;
+}
+
+.grammophone-none {
+  position: absolute;
+  left: 126px;
+  bottom: -256px;
+  width: 702px;
+  height: 566px;
+  background-image: url(../img/Grammophone.png);
+  transition: bottom 0.5s;
+}
+
+.grammophone-show {
+  bottom: 76px;
+}
+
+.drummer-none {
+  position: absolute;
+  left: 0;
+  bottom: -256px;
+  width: 1000px;
+  height: 566px;
+  background-image: url(../img/Drummer.png);
+  transition: bottom 0.5s;
+}
+
+.drummer-show {
+  bottom: 60px;
+}
+
 
 .popup {
   position: absolute;

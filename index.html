@@ -44,7 +44,11 @@
           </ul>
         </div>
       </div>
-      <div class="gamepad"></div>
+      <div class="slider-img">
+        <div class="gamepad-show"></div>
+        <div class="grammophone-none"></div>
+        <div class="drummer-none"></div>
+      </div>
     </div>
 
   </header>
@@ -118,6 +122,27 @@
     var color1 = document.querySelector(".slider-header li:nth-child(1) button");
     var color2 = document.querySelector(".slider-header li:nth-child(2) button");
     var color3 = document.querySelector(".slider-header li:nth-child(3) button");
+    var gamepad = document.querySelector(".gamepad-show");
+    var grammophone = document.querySelector(".grammophone-none");
+    var drummer = document.querySelector(".drummer-none");
+
+    color1.addEventListener("click", function(event) {
+      gamepad.classList.remove("gamepad-none");
+      grammophone.classList.remove("grammophone-show");
+      drummer.classList.remove("drummer-show");
+    });
+
+    color2.addEventListener("click", function(event) {
+      grammophone.classList.add("grammophone-show");
+      gamepad.classList.add("gamepad-none");
+      drummer.classList.remove("drummer-show");
+    });
+
+    color3.addEventListener("click", function(event) {
+      drummer.classList.add("drummer-show");
+      gamepad.classList.add("gamepad-none");
+      grammophone.classList.remove("grammophone-show");
+    });
 
     color1.addEventListener("click", function(event) {
       header.classList.add("header-bg-1");
