@@ -262,13 +262,13 @@ header {
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.2);
   transition: background 0.2s;
+  cursor: pointer;
 }
 
 .slider-circle:hover {
   width: 12px;
   height: 12px;
   background: #FFF;
-  cursor: pointer;
 }
 
 
@@ -277,6 +277,7 @@ header {
   height: 12px;
   border-radius: 50%;
   background: #FFC80A;
+  cursor: pointer;
 }
 
 .slider-img {
@@ -324,7 +325,7 @@ header {
 }
 
 .drummer-show {
-  bottom: 60px;
+  bottom: 59px;
 }
 
 
