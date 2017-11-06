@@ -674,7 +674,7 @@ header {
 .item-img {
   width: 400px;
   height: 480px;
-  background-image: url(/img/1-work-img.png);
+  background-image: url(../img/1-work-img.png);
   border-radius: 16px;
 }
 
