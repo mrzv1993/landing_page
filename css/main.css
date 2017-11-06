@@ -14,6 +14,13 @@ a {
   color: inherit;
 }
 
+p {
+  font-family: Arvo;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 26px;
+}
+
 input,
 label,
 select,
@@ -29,6 +36,19 @@ textarea {
   font-size: 13px;
   font-family: Arial;
   line-height: 1;
+}
+
+h2 {
+  letter-spacing: 0;
+  font-size: 24px;
+  font-family: 'Arvo', serif;
+  line-height: 32px;
+}
+
+h3 {
+  letter-spacing: 2.4px;
+  font-size: 12px;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .main-container {
@@ -243,9 +263,6 @@ header {
 
 .main-title h3 {
   color: #FFFFFF;
-  letter-spacing: 2.4px;
-  font-size: 12px;
-  font-family: 'Montserrat', sans-serif;
 }
 
 .slider-header ul {
@@ -366,10 +383,6 @@ header {
   margin: 0 auto;
   margin-top: 56px;
   color: #212121;
-  letter-spacing: 0;
-  font-size: 24px;
-  font-family: 'Arvo', serif;
-  line-height: 32px;
 }
 
 .modal-content-close {
@@ -543,11 +556,8 @@ header {
 
 .sign-up p {
   margin: 16px auto;
-  width: 128px;
+  width: 156px;
   color: #FFFFFF;
-  font-size: 12px;
-  font-family: Roboto-Light;
-  line-height: 1.5;
 }
 
 .sign-up button {
@@ -560,7 +570,7 @@ header {
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   cursor: pointer;
-  margin-top: 186px;
+  margin-top: 169px;
   width: 128px;
   background: #FFFFFF;
 }
@@ -615,5 +625,75 @@ header {
 .close-modal button:hover {
   color: #FFF;
 }
+
+.portfolio {
+  width: 100%;
+  background: #F7F8F9;
+}
+
+.potfolio-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  padding: 144px 0;
+}
+
+.portfolio-item {
+  width: 851px;
+  display: flex;
+  align-items: center;
+}
+
+.portfolio-item h3 {
+  color: #9FA3A7;
+}
+
+.portfolio-item h2 {
+  margin: 16px 0;
+  font-family: Arvo;
+  font-size: 22px;
+  color: #212121;
+  letter-spacing: 0;
+  line-height: 32px;
+
+}
+
+.portfolio-item a {
+  text-decoration: none;
+}
+
+.portfolio-item:nth-child(1) {
+  margin-bottom: 80px;
+}
+
+.portfolio-item:nth-child(2) {
+  text-align: right;
+}
+
+.item-img {
+  width: 400px;
+  height: 480px;
+  background-image: url(/img/1-work-img.png);
+  border-radius: 16px;
+}
+
+.item-info {
+  width: 400px;
+  padding-top: 24px;
+}
+
+.item-info:nth-child(2) {
+  padding-left: 72px;
+}
+
+.item-info:nth-child(1) {
+  padding-right: 72px;
+}
+
+.item-info img {
+  margin-top: 24px;
+}
+
 
 */ @import url('https://fonts.googleapis.com/css?family=Arvo:400,400i,700,700i|Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Playfair+Display:400,400i,700,700i,900,900i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i');
