@@ -699,7 +699,7 @@ header {
   height: 960px;
   background: #212121;
   display: grid;
-  grid-template-columns: repeat(4, 33%);
+  grid-template-columns: repeat(4, 25%);
   grid-auto-rows: 320px;
   justify-content: center;
 }
@@ -792,4 +792,33 @@ header {
   background-image: url(../img/item-7.png);
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.features {
+  position: relative;
+  height: 720px;
+  background-color: #F65A41;
+}
+
+.features-title {
+  font-family: Montserrat-Bold;
+  font-size: 120px;
+  color: #FFFFFF;
+  letter-spacing: 15px;
+  line-height: 106px;
+  text-align: center;
+}
+
+.ffr-item-1 {
+  width: 569px;
+  padding-top: 64px;
+}
+
+.ffr-item-1 img {
+  float: left;
+}
+
+.ffr-item-2 {
+  width: 369px;
+  margin-top: 64px;
 }
