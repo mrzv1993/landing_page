@@ -736,11 +736,11 @@ header {
 
 .catalog-list {
   display: grid;
-  height: 960px;
+  height: 900px;
   background: #212121;
 
   grid-template-columns: repeat(4, 25%);
-  grid-auto-rows: 320px;
+  grid-auto-rows: 300px;
   justify-content: center;
 }
 
@@ -781,16 +781,30 @@ header {
 
 .item-point {
   float: right;
-  width: 640px;
-  height: 640px;
+  padding-top: 104px;
+  width: 600px;
+  height: 600px;
   background-image: url(../img/item-1.png);
+}
+
+.item-point p {
+  width: 208px;
+}
+
+.item-point h2 {
+  margin: 32px 0;
 }
 
 .item-speaker {
   float: left;
-  width: 640px;
-  height: 320px;
+  width: 600px;
+  height: 300px;
   background-image: url(../img/item-2.png);
+  text-align: center;
+}
+
+.item-speaker h2 {
+  margin-top: 120px;
 }
 
 .item-bucket {
@@ -806,16 +820,16 @@ header {
 .item-watch {
   float: left;
   padding-top: 24px;
-  width: 320px;
-  height: 320px;
+  width: 300px;
+  height: 300px;
   background-color: #F5F5F5;
   text-align: center;
 }
 
 .item-shorts {
   float: right;
-  width: 320px;
-  height: 320px;
+  width: 300px;
+  height: 300px;
   background-image: url(../img/item-6.png);
   background-position: left;
   background-repeat: no-repeat;
@@ -823,8 +837,8 @@ header {
 
 .item-hat {
   float: right;
-  width: 320px;
-  height: 320px;
+  width: 300px;
+  height: 300px;
   background-image: url(../img/item-5.png);
   background-position: left;
   background-repeat: no-repeat;
@@ -832,8 +846,8 @@ header {
 
 .item-majesty {
   float: left;
-  width: 640px;
-  height: 320px;
+  width: 600px;
+  height: 300px;
   background-image: url(../img/item-7.png);
   background-position: center;
   background-repeat: no-repeat;
@@ -987,7 +1001,6 @@ header {
 .pricing-item {
   display: flex;
   margin-top: 72px;
-  ;
 }
 
 .pricing-item-block {
