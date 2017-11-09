@@ -1108,16 +1108,426 @@ header {
 
 .pricing-item-block {
   display: flex;
+  position: relative;
   width: 310px;
-  height: 500px;
-  background: #f7f7f7;
+  height: 420px;
+  border-radius: 8px;
+  margin-right: 16px;
+  padding-top: 64px;
 
-  justify-content: center;
   align-items: center;
   flex-flow: column;
+  transition: background 0.5s;
+}
+
+.pricing-item-block:hover {
+  background-color: rgba(84, 168, 230, 0.05);
+}
+
+.pricing-item-block:nth-child(2) {
+  background-image: url(/img/price-item-1.png);
+  background-color: rgba(84, 168, 230, 1);
+  background-repeat: no-repeat;
+  background-position: top -170px left -115px;
+  color: #FFFFFF;
+}
+
+.pricing-item-block:nth-child(2) .btn {
+  background-color: #FFFFFF;
+  border: none;
+  padding: 14px 24px;
+  color: rgba(84, 168, 230, 1);
+}
+
+.pricing-item-block:nth-child(2) p {
+  color: rgb(222, 240, 255);
+}
+
+.pricing-item-block:nth-child(2) span {
+  color: #FFFFFF;
+}
+
+.pricing-item-block h3 {
+  padding-bottom: 8px;
+}
+
+.pricing-item-block p {
+  width: 154px;
+  color: #9FA3A7;
+  margin-top: 24px;
+}
+
+.pricing-item-block .dollor {
+  font-family: Arvo;
+  font-size: 30px;
+  color: #212121;
+  letter-spacing: 0;
+  line-height: 48px;
+}
+
+.pricing-item-block .price {
+  font-family: Arvo-Bold;
+  font-size: 64px;
+  color: #212121;
+  letter-spacing: 0;
+}
+
+.pricing-item-block .btn {
+  position: absolute;
+  bottom: 48px;
+  border: 2px solid #D8D8D8;
+  color: #525252;
+}
+
+.price sup {
+  position: relative;
+  top: -3px;
+  left: 10px;
+  font-size: 32px;
+}
+
+.price sub {
+  position: relative;
+  top: -12px;
+  left: -24px;
+  font-family: Montserrat-Bold;
+  font-size: 10px;
+  letter-spacing: 2.4px;
+
 }
 
 .subscribe {
   height: 560px;
   background: #FFC80A;
+}
+
+.dashboard {
+  height: 800px;
+  background: #2C2C2C;
+}
+
+.dash-header {
+  padding-top: 72px;
+}
+
+.dash-header h2 {
+  font-size: 36px;
+  color: #FFFFFF;
+  line-height: 48px;
+  font-weight: 100;
+}
+
+.dash-header p {
+  width: 280px;
+  color: #9FA3A7;
+  line-height: 26px;
+}
+
+.calendar-tab {
+  float: right;
+}
+
+.dash-statist {
+  height: 365px;
+  margin-top: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.d-item {
+  position: relative;
+  width: 18px;
+  background: #FFF;
+  border-radius: 8px;
+  height: 80px;
+}
+
+.d-item::after {
+  content: "";
+  position: absolute;
+  bottom: -23px;
+  left: 7px;
+  font-family: Montserrat-Bold;
+  font-size: 10px;
+  color: #535355;
+  letter-spacing: 0;
+}
+
+.d-item:nth-child(1) {
+  background: #95791B;
+  height: 44px;
+}
+
+.d-item:nth-child(1)::after {
+  content: "1";
+}
+
+.d-item:nth-child(2) {
+  background: #95771B;
+  height: 70px;
+}
+
+.d-item:nth-child(2)::after {
+  content: "2";
+}
+
+.d-item:nth-child(3) {
+  background: #95751C;
+  height: 124px;
+}
+
+.d-item:nth-child(3)::after {
+  content: "3";
+}
+
+.d-item:nth-child(4) {
+  background: #95741D;
+  height: 87px;
+}
+
+.d-item:nth-child(4)::after {
+  content: "4";
+}
+
+.d-item:nth-child(5) {
+  background: #95721E;
+  height: 141px;
+}
+
+.d-item:nth-child(5)::after {
+  content: "5";
+}
+
+.d-item:nth-child(6) {
+  background: #956F1F;
+  height: 145px;
+}
+
+.d-item:nth-child(6)::after {
+  content: "6";
+}
+
+.d-item:nth-child(7) {
+  background: #956E1F;
+  height: 127px;
+}
+
+.d-item:nth-child(7)::after {
+  content: "7";
+}
+
+.d-item:nth-child(8) {
+  background: #946C20;
+  height: 166px;
+}
+
+.d-item:nth-child(8)::after {
+  content: "8";
+}
+
+.d-item:nth-child(9) {
+  background: #946A21;
+  height: 133px;
+}
+
+.d-item:nth-child(9)::after {
+  content: "9";
+}
+
+.d-item:nth-child(10) {
+  background: #946822;
+  height: 112px;
+}
+
+.d-item:nth-child(10)::after {
+  content: "10";
+}
+
+.d-item:nth-child(11) {
+  background: #946622;
+  height: 114px;
+}
+
+.d-item:nth-child(11)::after {
+  content: "11";
+}
+
+.d-item:nth-child(12) {
+  background: #946424;
+  height: 127px;
+}
+
+.d-item:nth-child(12)::after {
+  content: "12";
+}
+
+.d-item:nth-child(13) {
+  background: #946324;
+  height: 97px;
+}
+
+.d-item:nth-child(13)::after {
+  content: "13";
+}
+
+.d-item:nth-child(14) {
+  background: #946125;
+  height: 127px;
+}
+
+.d-item:nth-child(14)::after {
+  content: "14";
+}
+
+.d-item:nth-child(15) {
+  background: #945F26;
+  height: 124px;
+}
+
+.d-item:nth-child(15)::after {
+  content: "15";
+}
+
+.d-item:nth-child(16) {
+  background: #945D27;
+  height: 157px;
+}
+
+.d-item:nth-child(16)::after {
+  content: "16";
+}
+
+.d-item:nth-child(17) {
+  background: #955E27;
+  height: 199px;
+}
+
+.d-item:nth-child(17)::after {
+  content: "17";
+}
+
+.d-item:nth-child(18) {
+  background: #935928;
+  height: 177px;
+}
+
+.d-item:nth-child(18)::after {
+  content: "18";
+}
+
+.d-item:nth-child(19) {
+  background: #935829;
+  height: 188px;
+}
+
+.d-item:nth-child(19)::after {
+  content: "19";
+}
+
+.d-item:nth-child(20) {
+  background: #93562A;
+  height: 198px;
+}
+
+.d-item:nth-child(20)::after {
+  content: "20";
+}
+
+.d-item:nth-child(21) {
+  background: #93542B;
+  height: 227px;
+}
+
+.d-item:nth-child(21)::after {
+  content: "21";
+}
+
+.d-item:nth-child(22) {
+  background: #93522C;
+  height: 220px;
+}
+
+.d-item:nth-child(22)::after {
+  content: "22";
+}
+
+.d-item:nth-child(23) {
+  background: #92502C;
+  height: 230px;
+}
+
+.d-item:nth-child(23)::after {
+  content: "23";
+}
+
+.d-item:nth-child(24) {
+  background: #924E2D;
+  height: 264px;
+}
+
+.d-item:nth-child(24)::after {
+  content: "24";
+}
+
+.d-item:nth-child(25) {
+  background: #924D2E;
+  height: 242px;
+}
+
+.d-item:nth-child(25)::after {
+  content: "25";
+}
+
+.d-item:nth-child(26) {
+  background: #924B2F;
+  height: 248px;
+}
+
+.d-item:nth-child(26)::after {
+  content: "26";
+}
+
+.d-item:nth-child(27) {
+  background: #92492F;
+  height: 275px;
+}
+
+.d-item:nth-child(27)::after {
+  content: "27";
+}
+
+.d-item:nth-child(28) {
+  background: #924731;
+  height: 297px;
+}
+
+.d-item:nth-child(28)::after {
+  content: "28";
+}
+
+.d-item:nth-child(29) {
+  background: #924531;
+  height: 326px;
+}
+
+.d-item:nth-child(29)::after {
+  content: "29";
+}
+
+.d-item:nth-child(30) {
+  background: #924332;
+  height: 365px;
+}
+
+.d-item:nth-child(30)::after {
+  content: "30";
+}
+
+.d-item:hover {
+  background-color: #FB8F22;
+}
+
+.d-item:hover:after {
+  color: #FFFFFF;
 }
