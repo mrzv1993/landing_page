@@ -12,6 +12,11 @@
 
 a {
   color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #FFC80A;
 }
 
 p {
@@ -36,6 +41,17 @@ textarea {
   font-size: 13px;
   font-family: Arial;
   line-height: 1;
+}
+
+.btn {
+  padding: 12px 32px;
+  border: 2px solid #000;
+  border-radius: 50px;
+  color: #212121;
+  letter-spacing: 2.4px;
+  font-size: 12px;
+  font-family: Montserrat-Bold;
+  cursor: pointer;
 }
 
 h2 {
@@ -581,9 +597,6 @@ header {
   cursor: pointer;
 }
 
-
-
-
 .login b:before {
   float: left;
   margin-top: 100%;
@@ -664,10 +677,6 @@ header {
 
 .portfolio-item a {
   text-decoration: none;
-}
-
-.portfolio-item a:hover {
-  color: #FFC80A;
 }
 
 .portfolio-item:nth-child(1) {
@@ -752,7 +761,7 @@ header {
 }
 
 .catalog-item:nth-child(2) {
-  background-color: #FF6941;
+  background-color: rgb(255, 105, 65);
 
   grid-column: 3/5;
 }
@@ -779,6 +788,11 @@ header {
   grid-row: 3/4;
 }
 
+.catalog-item h2 {
+  font-weight: 100;
+  font-size: 36px;
+}
+
 .item-point {
   float: right;
   padding-top: 104px;
@@ -789,44 +803,84 @@ header {
 
 .item-point p {
   width: 208px;
+  color: #707274;
+  line-height: 26px;
 }
 
 .item-point h2 {
   margin: 32px 0;
 }
 
+.item-point h3 {
+  color: #9FA3A7;
+  letter-spacing: 2.4px;
+}
+
+.item-point button {
+  margin-top: 128px;
+  border: 2px solid #9FA3A7;
+}
+
 .item-speaker {
   float: left;
   width: 600px;
   height: 300px;
-  background-image: url(../img/item-2.png);
+  background-image: url(../img/item-2.jpg);
   text-align: center;
 }
 
 .item-speaker h2 {
   margin-top: 120px;
+  color: #FFFFFF;
+}
+
+.item-speaker button {
+  margin-top: 24px;
+  border: 2px solid rgba(255, 255, 255, 0.35);
+  border-radius: 18.5px;
+  color: #FFFFFF;
 }
 
 .item-bucket {
+  position: relative;
   float: left;
-  width: 320px;
-  height: 320px;
+  width: 300px;
+  height: 300px;
   background-color: #FDDD37;
   background-image: url(../img/item-3.png);
   background-position: left;
   background-repeat: no-repeat;
 }
 
+.item-bucket b {
+  color: #FFFFFF;
+}
+
+.polygon {
+  float: right;
+  width: 16px;
+  height: 100%;
+  background-image: url(../img/polygon.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .item-watch {
   float: left;
-  padding-top: 24px;
+  padding-top: 80px;
   width: 300px;
   height: 300px;
   background-color: #F5F5F5;
   text-align: center;
 }
 
+.item-watch button {
+  margin-top: 24px;
+  border: 2px solid #FFC80A;
+}
+
 .item-shorts {
+  position: relative;
   float: right;
   width: 300px;
   height: 300px;
@@ -836,6 +890,7 @@ header {
 }
 
 .item-hat {
+  position: relative;
   float: right;
   width: 300px;
   height: 300px;
@@ -845,12 +900,60 @@ header {
 }
 
 .item-majesty {
+  position: relative;
   float: left;
   width: 600px;
   height: 300px;
   background-image: url(../img/item-7.png);
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.new-price {
+  position: absolute;
+  top: 24px;
+  left: 24px;
+  width: 40px;
+  height: 16px;
+  border-radius: 3px;
+  background: #FD674A;
+  color: #FDFDFD;
+  text-align: center;
+  letter-spacing: 2.5px;
+  font-size: 8px;
+  font-family: Montserrat-Bold;
+  line-height: 16px;
+}
+
+.catalog-info {
+  position: absolute;
+  bottom: 24px;
+  left: 24px;
+  float: left;
+  text-align: left;
+}
+
+.catalog-info h2 {
+  margin-bottom: 8px;
+  font-weight: 100;
+  font-size: 22px;
+}
+
+.catalog-info h3 {
+  color: #9FA3A7;
+  letter-spacing: 2px;
+  font-size: 10px;
+  font-family: Montserrat-Bold;
+}
+
+.catalog-price {
+  position: absolute;
+  right: 32px;
+  bottom: 24px;
+  color: #212121;
+  letter-spacing: 0;
+  font-size: 16px;
+  font-family: Montserrat-Bold;
 }
 
 .features {
