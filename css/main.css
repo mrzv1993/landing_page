@@ -1196,15 +1196,25 @@ header {
 }
 
 .subscribe {
+  position: relative;
   display: flex;
+  overflow: hidden;
   height: 560px;
   background: #FFC80A;
-  background-image: url(../img/crown-image.png);
-  background-position: left bottom;
-  background-repeat: no-repeat;
 
   justify-content: center;
   align-items: center;
+}
+
+.subscribe-video-container {
+  position: absolute;
+  bottom: -5px;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.subscribe-video-container video {
+  width: 100%;
 }
 
 .subscribe-wrap {
@@ -1212,29 +1222,66 @@ header {
   text-align: center;
 }
 
+.bubble-wrap {}
+
 .bubble {
   position: absolute;
   right: -240px;
-  bottom: 40px;
+  bottom: 90px;
   width: 200px;
-  height: 150px;
+  height: 137px;
   border: 3px dashed #FFFFFF;
-  border-radius: 8px;
+  border-bottom: none;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
 }
 
-.bubble::after,
-.bubble::before {
+.bubble-tr-1 {
+  position: relative;
+  left: -3px;
+  display: flex;
+  overflow: hidden;
+  padding-bottom: 3px;
+  width: 206px;
+  height: 5px;
+}
+
+.bubble-tr-2 {
+  position: relative;
+  overflow: hidden;
+  width: 200px;
+  height: 27px;
+}
+
+.tr-1 {
+  width: 34px;
+  height: 100%;
+  border-bottom: 3px dashed #FFFFFF;
+  border-left: 3px dashed #FFFFFF;
+  border-bottom-left-radius: 8px;
+}
+
+.tr-4 {
+  width: 35px;
+  height: 100%;
+}
+
+.tr-3 {
+  width: 138px;
+  height: 100%;
+  border-right: 3px dashed #FFFFFF;
+  border-bottom: 3px dashed #FFFFFF;
+  border-bottom-right-radius: 10px;
+}
+
+.tr-2 {
   position: absolute;
-  bottom: -21px;
-  left: 40px;
-  width: 24px;
-  width: 0;
+  bottom: 13px;
+  left: 33px;
+  width: 26px;
   height: 24px;
-  height: 0;
-  border-width: 24px 20px 0 20px;
-  border-style: solid;
-  border-color: #FFC80A transparent transparent transparent;
-  content: "";
+  border: 3px dashed #FFFFFF;
+  transform: rotate(45deg);
 }
 
 .bubble::before {
@@ -1244,7 +1291,7 @@ header {
 }
 
 .subscribe h2 {
-  color: #FFFFFF;
+  color: #5b4494;
   letter-spacing: 0;
   font-weight: 100;
   font-size: 86px;
@@ -1253,7 +1300,7 @@ header {
 
 .subscribe p {
   margin-top: 16px;
-  color: #FFFFFF;
+  color: #5b4494;
   letter-spacing: 0;
   font-size: 22px;
   line-height: 32px;
