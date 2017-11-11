@@ -272,46 +272,55 @@
       <div class="dash-header">
         <div class="calendar-tab">
           <ul>
-            <li>1</li>
-            <li>2</li>
-            <li>3</li>
+            <li class="c-tab active-tab">MONTH</li>
+            <li class="c-tab">WEEK</li>
+            <li class="c-tab">DAY</li>
           </ul>
         </div>
         <h2>Views Statistic</h2>
         <p>Over the course of the 19th century, the word "science" became increasingly </p>
       </div>
       <div class="dash-statist">
-        <div class="d-item"></div>
-        <div class="d-item"></div>
-        <div class="d-item"></div>
-        <div class="d-item"></div>
-        <div class="d-item"></div>
-        <div class="d-item"></div>
-        <div class="d-item"></div>
-        <div class="d-item"></div>
-        <div class="d-item"></div>
-        <div class="d-item"></div>
-        <div class="d-item"></div>
-        <div class="d-item"></div>
-        <div class="d-item"></div>
-        <div class="d-item"></div>
-        <div class="d-item"></div>
-        <div class="d-item"></div>
-        <div class="d-item"></div>
-        <div class="d-item"></div>
-        <div class="d-item"></div>
-        <div class="d-item"></div>
-        <div class="d-item"></div>
-        <div class="d-item"></div>
-        <div class="d-item"></div>
-        <div class="d-item"></div>
-        <div class="d-item"></div>
-        <div class="d-item"></div>
-        <div class="d-item"></div>
-        <div class="d-item"></div>
-        <div class="d-item"></div>
-        <div class="d-item"></div>
+        <div class="d-item d-1"></div>
+        <div class="d-item d-2"></div>
+        <div class="d-item d-3"></div>
+        <div class="d-item d-4"></div>
+        <div class="d-item d-5"></div>
+        <div class="d-item d-6"></div>
+        <div class="d-item d-7"></div>
+        <div class="d-item d-8"></div>
+        <div class="d-item d-9"></div>
+        <div class="d-item d-10"></div>
+        <div class="d-item d-11"></div>
+        <div class="d-item d-12"></div>
+        <div class="d-item d-13"></div>
+        <div class="d-item d-14"></div>
+        <div class="d-item d-15 d-item-active"></div>
+        <div class="d-item d-16"></div>
+        <div class="d-item d-17"></div>
+        <div class="d-item d-18"></div>
+        <div class="d-item d-19"></div>
+        <div class="d-item d-20"></div>
+        <div class="d-item d-21"></div>
+        <div class="d-item d-22"></div>
+        <div class="d-item d-23"></div>
+        <div class="d-item d-24"></div>
+        <div class="d-item d-25"></div>
+        <div class="d-item d-26"></div>
+        <div class="d-item d-27"></div>
+        <div class="d-item d-28"></div>
+        <div class="d-item d-29"></div>
+        <div class="d-item d-30"></div>
       </div>
+    </div>
+    <div class="dashboard-footer">
+      <div class="download">
+        <div class="download-img"></div>
+        <a href="#">Download<br>(CSV. 25KB)</a>
+      </div>
+      <div class="max_views">MAX VIEWS <span>12 820</span></div>
+      <div class="min_views">MIN VIEWS <span>985</span></div>
+      <div class="average">AVERAGE <span>4 567</span></div>
     </div>
   </section>
   <section></section>
@@ -409,6 +418,14 @@
       color3.classList.add("slider-circle-active");
       color1.classList.remove("slider-circle-active");
       color2.classList.remove("slider-circle-active");
+    });
+
+    <!-- Dashboard -->>
+
+    var dashitem = document.querySelectorAll(".d-item");
+
+    dashitem.addEventListener("click", function(event) {
+      dashitem.classList.add("d-item-active");
     });
   </script>
 </body>

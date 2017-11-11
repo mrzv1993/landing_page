@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="18px" viewBox="0 0 16 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46 (44423) - http://www.bohemiancoding.com/sketch -->
+    <title>Download</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Dashboard--#4" transform="translate(-90.000000, -693.000000)" fill="#FFFFFF">
+            <g id="Download" transform="translate(81.000000, 683.000000)">
+                <g transform="translate(9.000000, 10.000000)" id="Shape">
+                    <path d="M15,18 L1,18 C0.448,18 0,17.552 0,17 C0,16.448 0.448,16 1,16 L15,16 C15.552,16 16,16.448 16,17 C16,17.552 15.552,18 15,18 L15,18 Z M8.778,14.682 C8.672,14.789 8.547,14.862 8.414,14.912 C8.292,14.967 8.158,15 8.016,15 C7.873,15 7.739,14.966 7.616,14.912 C7.485,14.862 7.361,14.788 7.255,14.682 L2.316,9.73 C1.918,9.331 1.918,8.684 2.316,8.285 C2.715,7.885 3.361,7.885 3.76,8.285 L7.031,11.565 L7.031,0.984 C7.031,0.44 7.472,0 8.016,0 C8.559,0 9,0.44 9,0.984 L9,11.567 L12.273,8.285 C12.672,7.885 13.318,7.885 13.717,8.285 C14.116,8.684 14.116,9.331 13.717,9.73 L8.778,14.682 L8.778,14.682 Z"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
