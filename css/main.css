@@ -909,20 +909,23 @@ header {
   background-repeat: no-repeat;
 }
 
-.new-price {
+.mark {
   position: absolute;
   top: 24px;
   left: 24px;
-  width: 40px;
+  padding: 0 4px;
   height: 16px;
   border-radius: 3px;
-  background: #FD674A;
   color: #FDFDFD;
   text-align: center;
   letter-spacing: 2.5px;
   font-size: 8px;
   font-family: Montserrat-Bold;
   line-height: 16px;
+}
+
+.mark-price {
+  background: #FD674A;
 }
 
 .catalog-info {
@@ -1200,7 +1203,10 @@ header {
   display: flex;
   overflow: hidden;
   height: 560px;
-  background: #FFC80A;
+  background-color: #FFC80A;
+  background-image: url(../img/crown-image.png);
+  background-repeat: no-repeat;
+  background-position: center bottom;
 
   justify-content: center;
   align-items: center;
@@ -1222,11 +1228,9 @@ header {
   text-align: center;
 }
 
-.bubble-wrap {}
-
 .bubble {
   position: absolute;
-  right: -240px;
+  right: -250px;
   bottom: 90px;
   width: 200px;
   height: 137px;
@@ -1291,7 +1295,7 @@ header {
 }
 
 .subscribe h2 {
-  color: #5b4494;
+  color: #FFFFFF;
   letter-spacing: 0;
   font-weight: 100;
   font-size: 86px;
@@ -1300,7 +1304,7 @@ header {
 
 .subscribe p {
   margin-top: 16px;
-  color: #5b4494;
+  color: #FFFFFF;
   letter-spacing: 0;
   font-size: 22px;
   line-height: 32px;
@@ -1729,7 +1733,7 @@ header {
 
 .dashboard-footer {
   display: flex;
-  margin-top: 72px;
+  margin-top: 104px;
   color: #9FA3A7;
   letter-spacing: 2.4px;
   font-size: 12px;
@@ -1780,4 +1784,30 @@ header {
 
 .download a:hover {
   color: #FFC80A;
+}
+
+.poduct-card {
+  height: 720px;
+  background-color: #FFFFFF;
+}
+
+.mark-product {
+  background-color: #8F75BE;
+  position: static;
+  width: 100px;
+}
+
+.poruct-wrap {
+  display: flex;
+}
+
+.product-image {
+  width: 648px;
+  height: 573px;
+  background: #f7f7f7;
+}
+
+.product-info {
+  width: 500px;
+  background-color: antiquewhite;
 }
