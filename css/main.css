@@ -1205,8 +1205,8 @@ header {
   height: 560px;
   background-color: #FFC80A;
   background-image: url(../img/crown-image.png);
-  background-repeat: no-repeat;
   background-position: center bottom;
+  background-repeat: no-repeat;
 
   justify-content: center;
   align-items: center;
@@ -1740,7 +1740,7 @@ header {
   /* MAX VIEWS: */
   font-family: Montserrat-Bold;
 
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -1792,9 +1792,9 @@ header {
 }
 
 .mark-product {
-  background-color: #8F75BE;
   position: static;
   width: 100px;
+  background-color: #8F75BE;
 }
 
 .poruct-wrap {
