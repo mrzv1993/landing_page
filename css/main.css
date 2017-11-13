@@ -1797,17 +1797,130 @@ header {
   background-color: #8F75BE;
 }
 
+.poduct-card h2 {
+  margin-top: 8px;
+}
+
+.poduct-card p {
+  display: inline-block;
+  margin-top: 32px;
+
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 26px;
+  font-size: 14px;
+
+  color: #9FA3A7;
+}
+
+.product-rate {
+  list-style: none;
+}
+
+.product-rate li {
+  float: left;
+  display: inline-block;
+  padding-left: 8px;
+}
+
+.product-rate li:first-child {
+  padding-left: 0;
+}
+
 .poruct-wrap {
   display: flex;
+  margin-top: 64px;
 }
 
 .product-image {
   width: 648px;
   height: 573px;
-  background: #f7f7f7;
+  background-image: url(/img/product.png);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .product-info {
   width: 500px;
-  background-color: antiquewhite;
+  padding-left: 32px;
+  padding-top: 32px;
+}
+
+.poduct-quantity {
+  margin-top: 16px;
+}
+
+.plus {
+  text-align: center;
+  display: inline-block;
+  padding: 8px 4px;
+  width: 88px;
+  border: 2px solid #EEEEEE;
+  border-radius: 25px;
+  margin-left: 24px;
+}
+
+.product-color {
+  margin-top: 32px;
+}
+
+.color-change {
+  list-style: none;
+  display: inline-block;
+  margin-left: 32px;
+}
+
+.color-change li {
+  float: left;
+  padding-left: 12px;
+}
+
+.color-change li:first-child {
+  padding-left: 0;
+}
+
+.color-circle {
+  width: 11px;
+  height: 11px;
+  border-radius: 24px;
+  cursor: pointer;
+}
+
+.color-circle:hover {
+  outline: 4px solid #D8D8D8;
+}
+
+.color-1 {
+  background-color: #57B9BB;
+}
+
+.color-2 {
+  background-color: #8F76BC;
+}
+
+.color-3 {
+  background-color: #F65A41;
+}
+
+.color-4 {
+  background-color: #292929;
+}
+
+.color-5 {
+  background-color: #8AE02B;
+}
+
+.poduct-price {
+  position: relative;
+  padding: 64px 0;
+  text-align: right;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+  font-size: 36px;
+
+  color: #292929;
+  border-bottom: 1px solid #212121;
 }
