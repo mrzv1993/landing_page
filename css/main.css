@@ -2071,13 +2071,48 @@ footer {
   line-height: 36px;
 }
 
-.footer-wrap li:first-child {
+footer h3 {
   padding-bottom: 16px;
   color: #FFFFFF;
 }
 
+.footer-input-warp {
+  position: relative;
+  margin-top: 24px;
+  width: 272px;
+}
+
+.footer-subscribe input {
+  padding: 0 16px;
+  width: 240px;
+  height: 47px;
+  border-radius: 24px;
+  background-color: #353535;
+  color: #FFFFFF;
+}
+
+.sub-btn {
+  position: absolute;
+  top: 4px;
+  right: 6px;
+  width: 39px;
+  height: 39px;
+  border-radius: 50%;
+  background-color: aliceblue;
+  background-color: #FFC80A;
+  background-image: url(../img/mail.svg);
+  background-position: center;
+  background-size: 24px 24px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.sub-btn:hover {
+  background-color: #d9ab0a;
+}
+
 .copyright {
-  margin-top: 32px;
+  margin-top: 48px;
   color: rgba(200, 200, 200, 0.5);
   font-weight: normal;
   font-style: normal;
