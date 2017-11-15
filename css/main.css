@@ -1979,7 +1979,7 @@ header {
   padding-left: 48px;
   width: 200px;
   height: 32px;
-  background-image: url(/img/shipped.svg);
+  background-image: url(../img/shipped.svg);
   background-position: center left;
   background-size: 40px;
   background-repeat: no-repeat;
