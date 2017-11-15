@@ -1835,7 +1835,7 @@ header {
 .product-image {
   width: 648px;
   height: 573px;
-  background-image: url(/img/product.png);
+  background-image: url(../img/product.png);
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -1943,8 +1943,88 @@ header {
 }
 
 .contact-block {
+  padding-top: 128px;
   min-width: 50%;
   background: #FFF;
+}
+
+.contact-block .logo {
+  color: #000000;
+}
+
+.contact-block h3 {
+  padding-top: 64px;
+  color: #9FA3A7;
+  letter-spacing: 2.4px;
+}
+
+.contact-block b {
+  display: inline-block;
+  padding-top: 8px;
+  width: 480px;
+  color: #212121;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 22px;
+  font-family: Arvo;
+  line-height: 32px;
+}
+
+.contact-block p {
+  padding-top: 32px;
+  width: 321px;
+  color: #9FA3A7;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 14px;
+  font-family: Arvo;
+  line-height: 26px;
+}
+
+.networks {
+  list-style: none;
+}
+
+.networks li {
+  float: left;
+  margin-top: 64px;
+  margin-left: 32px;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: #CBCBCB;
+  font-size: 0;
+  cursor: pointer;
+}
+
+.networks li:hover {
+  background-color: #58b5ef;
+}
+
+.facebook {
+  background-image: url(../img/facebook.svg);
+  background-position: center;
+  background-size: 16px;
+  background-repeat: no-repeat;
+}
+
+.twitter {
+  background-image: url(../img/twitter.svg);
+  background-position: center;
+  background-size: 16px;
+  background-repeat: no-repeat;
+}
+
+.linkedin {
+  background-image: url(../img/linkedin.svg);
+  background-position: center;
+  background-size: 16px;
+  background-repeat: no-repeat;
+}
+
+
+.networks li:first-child {
+  margin-left: 0;
 }
 
 .map-wrap {
@@ -1971,4 +2051,37 @@ header {
 footer {
   height: 400px;
   background-color: #2C2C2C;
+}
+
+.footer-wrap {
+  display: flex;
+  padding-top: 64px;
+
+  justify-content: space-between;
+}
+
+.footer-wrap ul {
+  list-style: none;
+}
+
+.footer-wrap li {
+  color: #6C6C6C;
+  font-size: 14px;
+  font-family: Roboto;
+  line-height: 36px;
+}
+
+.footer-wrap li:first-child {
+  padding-bottom: 16px;
+  color: #FFFFFF;
+}
+
+.copyright {
+  margin-top: 32px;
+  color: rgba(200, 200, 200, 0.5);
+  font-weight: normal;
+  font-style: normal;
+  font-size: 14px;
+  font-family: Roboto;
+  line-height: 22px;
 }
