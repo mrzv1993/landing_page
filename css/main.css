@@ -2163,16 +2163,14 @@ header {
 
 .client-list {
   position: relative;
+  display: flex;
   margin-top: 24px;
   padding-bottom: 88px;
   width: 100%;
   border-bottom: 4px solid #3C3C44;
   list-style: none;
-}
 
-.client-list li {
-  float: left;
-  padding-left: 154px;
+  justify-content: space-around;
 }
 
 .client-list li:first-child {
