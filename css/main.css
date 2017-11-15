@@ -2129,10 +2129,14 @@ header {
 }
 
 .testimonials {
-  display: flex;
   height: 800px;
   background-color: #545462;
+}
 
+.testimonials-wrap {
+  display: flex;
+
+  justify-content: center;
   flex-flow: column;
   align-items: center;
 }
@@ -2160,14 +2164,15 @@ header {
 .client-list {
   position: relative;
   margin-top: 24px;
-  padding-bottom: 32px;
+  padding-bottom: 88px;
+  width: 100%;
   border-bottom: 4px solid #3C3C44;
   list-style: none;
 }
 
 .client-list li {
   float: left;
-  padding-left: 174px;
+  padding-left: 154px;
 }
 
 .client-list li:first-child {
