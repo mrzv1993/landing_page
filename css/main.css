@@ -745,12 +745,12 @@ header {
 
 .catalog-list {
   display: grid;
+  min-width: 100vh;
   height: 900px;
   background: #212121;
 
   grid-template-columns: repeat(4, 25%);
   grid-auto-rows: 300px;
-  justify-content: center;
 }
 
 .catalog-item:nth-child(1) {
@@ -962,6 +962,16 @@ header {
 .features {
   height: 720px;
   background-color: #F65A41;
+  color: #FFFFFF;
+}
+
+.features p {
+  padding-top: 8px;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 12px;
+  font-family: Roboto;
+  line-height: 22px;
 }
 
 .features-grid {
@@ -978,10 +988,29 @@ header {
   font-size: 120px;
   font-family: Montserrat-Bold;
   line-height: 106px;
+  opacity: 0.23;
 }
 
 .features-item {
   position: relative;
+}
+
+.features-name {
+  display: inline-block;
+  float: left;
+  margin-right: 8px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #FFC80A;
+  color: #212121;
+  text-align: center;
+  letter-spacing: 2.4px;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 10px;
+  font-family: Montserrat;
+  line-height: 16px;
 }
 
 .features-item:nth-child(1) {
@@ -1067,6 +1096,7 @@ header {
   top: 0;
   left: 0;
   z-index: 1;
+  width: 450px;
 }
 
 .features-img_4 {
@@ -1084,6 +1114,7 @@ header {
   top: -24px;
   left: -174px;
   z-index: 1;
+  width: 550px;
 }
 
 .pricing {
