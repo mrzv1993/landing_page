@@ -2098,8 +2098,75 @@ header {
 }
 
 .testimonials {
+  display: flex;
   height: 800px;
   background-color: #545462;
+
+  flex-flow: column;
+  align-items: center;
+}
+
+.review {
+  position: relative;
+  display: flex;
+  margin-top: 120px;
+  width: 843px;
+  height: 274px;
+  background-image: url(../img/quote.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  color: #FFFFFF;
+  text-align: center;
+
+  align-items: center;
+}
+
+.review p {
+  font-size: 36px;
+  line-height: 46px;
+}
+
+.client-list {
+  position: relative;
+  margin-top: 24px;
+  padding-bottom: 32px;
+  border-bottom: 4px solid #3C3C44;
+  list-style: none;
+}
+
+.client-list li {
+  float: left;
+  padding-left: 174px;
+}
+
+.client-list li:first-child {
+  padding-left: 0;
+}
+
+.client-list img {
+  cursor: pointer;
+}
+
+.line-active {
+  position: absolute;
+  bottom: -4px;
+  left: calc(50% - 56px);
+  width: 112px;
+  height: 4px;
+  background-color: #FFC80A;
+}
+
+.client-name {
+  margin-top: 32px;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 22px;
+  font-family: Arvo;
+  line-height: 32px;
+}
+
+.client-name h3 {
+  color: #9FA3A7;
 }
 
 footer {
